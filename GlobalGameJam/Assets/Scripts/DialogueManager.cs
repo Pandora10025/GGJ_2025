@@ -20,10 +20,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (textboxIsActive && Input.GetMouseButtonDown(0))
-        {
-            DeactivateTextBox();
-        }
+
     }
 
     public void ActivateTextBox(string objName, string objText)

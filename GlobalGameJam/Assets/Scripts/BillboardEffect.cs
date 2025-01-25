@@ -23,6 +23,7 @@ public class BillboardEffect : MonoBehaviour
         {
             transform.rotation = mainCamera.transform.rotation;
         }
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        //transform.rotation.eulerAngles.x
     }
 }

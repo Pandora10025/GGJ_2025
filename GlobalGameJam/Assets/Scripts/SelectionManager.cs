@@ -22,12 +22,11 @@ public class SelectionManager : MonoBehaviour
     {
         if(_selection != null)
         {
-            var selectionRenderer = _selection.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
             _selection = null;
-
+        } else
+        {
+            this.GetComponent<DialogueManager>().DeactivateTextBox();
         }
-
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -38,24 +37,21 @@ public class SelectionManager : MonoBehaviour
 
             if (selection.CompareTag("Selectable"))
             {
-                if (selectionRenderer != null)
-                {
-                    selectionRenderer.material = highlightMaterial;
-
-                    isLooking = true;
-                }
-
+                isLooking = true;
                 _selection = selection;
             }
             
         }
 
 
-        if (isLooking && Input.GetMouseButtonDown(0))
+        if (isLooking)
         {
-            //this.GetComponent<DialogueManager>().textboxIsActive = true;
-            if(_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
-            isLooking = false;
+            if(Input.GetMouseButtonDown(0))
+            {
+                if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
+                isLooking = false;
+            }
+            
         }
         
     }
