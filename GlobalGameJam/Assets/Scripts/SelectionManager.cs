@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Fungus;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class SelectionManager : MonoBehaviour
 
     private Transform _selection;
     private bool isLooking;
+    public Flowchart flowchart;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +51,7 @@ public class SelectionManager : MonoBehaviour
             if(Input.GetMouseButtonDown(0))
             {
                 if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
+                flowchart.SendFungusMessage(_selection.GetComponent<ObjectBehavior>().FungusMessage);
                 isLooking = false;
             }
             
