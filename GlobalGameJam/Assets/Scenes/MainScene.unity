@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311924, g: 0.38073963, b: 0.3587269, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2891,6 +2891,8 @@ GameObject:
   - component: {fileID: 927034651}
   - component: {fileID: 927034650}
   - component: {fileID: 927034649}
+  - component: {fileID: 927034672}
+  - component: {fileID: 927034671}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2912,9 +2914,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 107.14332
-    y: 17.207596
-    width: 105.721375
+    x: 109.47704
+    y: 18.374456
+    width: 105.11332
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2957,11 +2959,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 407.586, y: 366.7041}
+  scrollPos: {x: 252.8806, y: 169.63994}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 366
-  zoom: 0.67000026
+  blockViewHeight: 296
+  zoom: 0.81649953
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3794,7 +3796,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 89.19684
     y: 193.91205
-    width: 132.58704
+    width: 130.83287
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3991,8 +3993,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 100.69687
-    y: 107.74539
-    width: 113.681564
+    y: 107.6996
+    width: 113.68651
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4403,7 +4405,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 798.4986
     y: 109.92151
-    width: 137.56216
+    width: 137.56894
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4498,7 +4500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 812.4986
     y: 28.822607
-    width: 113.681564
+    width: 113.074135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4554,7 +4556,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 453.4986
     y: 92.92149
-    width: 120.64674
+    width: 121.03494
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4649,7 +4651,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.4986
     y: 15.921494
-    width: 103.73132
+    width: 103.276215
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4719,7 +4721,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 629.4986
     y: 14.921494
-    width: 89.80098
+    width: 89.191696
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4774,7 +4776,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -54.245453
     y: 7.11063
-    width: 99.75122
+    width: 99.60199
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4857,7 +4859,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -72.926636
     y: 89.52807
-    width: 123.63181
+    width: 124.096794
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5199,7 +5201,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.22717
     y: 198.31935
-    width: 136.56714
+    width: 134.50708
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5392,7 +5394,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 282.01825
     y: 106.01165
-    width: 117.66167
+    width: 117.360725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5713,7 +5715,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 293.0073
     y: 0.51714706
-    width: 93.78108
+    width: 92.86592
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5801,9 +5803,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 113
   indentLevel: 0
-  storyText: Titrations are so simple, it's one strong acid and one strong base.
+  storyText: "Titrations are so simple, it's one strong acid and one strong base.
     You just need to add the base one drop at a time. But sometimes undergrads will
-    try to rush the titration...
+    try to rush the titration and add more of the base than they should at once.
+    \nIf they are too close to the neutral point then they will have too much base
+    and their solution turns a deep pink. \nYou don't want a deep pink, you want
+    a very pale pink, because that is your sign that your solution is neutral. \nI
+    shrimpathize with those students, we have all been young and naive once. But
+    science is about discipline!\nWhen a young scientist ruins their titration, wasting
+    several minutes, it's sheer negligence! You must move at a sea snail's pace in
+    order to prevent any errors! When you hit that perfect point the payoff is mantastic!
+    You will learn the concentration of your unknown solution, so you can keep working!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5812,7 +5822,7 @@ MonoBehaviour:
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 1
-  waitForClick: 1
+  waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
@@ -5914,9 +5924,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -80.61895
-    y: 358.75873
-    width: 135.57211
+    x: -79.45209
+    y: 359.9256
+    width: 135.11946
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5928,7 +5938,9 @@ MonoBehaviour:
   - {fileID: 927034654}
   - {fileID: 927034653}
   - {fileID: 927034652}
+  - {fileID: 927034672}
   - {fileID: 927034651}
+  - {fileID: 927034671}
   - {fileID: 927034650}
   - {fileID: 927034649}
   suppressAllAutoSelections: 0
@@ -6028,7 +6040,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -77.32227
     y: 271.94556
-    width: 128.60693
+    width: 128.38339
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6330,7 +6342,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -86.11344
     y: 186.23145
-    width: 142.53728
+    width: 141.24316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6350,6 +6362,130 @@ MonoBehaviour:
   - {fileID: 927034661}
   - {fileID: 927034660}
   suppressAllAutoSelections: 0
+--- !u!114 &927034671
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927034546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1279515670}
+  targetComponentAssemblyName: Fungus.Writer, Fungus, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Writer
+  targetMethod: SetTextSpeed
+  targetMethodText: 'SetTextSpeed (Single, Single): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Single
+      intValue: 0
+      boolValue: 0
+      floatValue: 60
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Single
+      intValue: 0
+      boolValue: 0
+      floatValue: 0.25
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 1
+  callMode: 0
+--- !u!114 &927034672
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927034546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1279515670}
+  targetComponentAssemblyName: Fungus.Writer, Fungus, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Writer
+  targetMethod: SetTextSpeed
+  targetMethodText: 'SetTextSpeed (Single, Single): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Single
+      intValue: 0
+      boolValue: 0
+      floatValue: 200
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Single
+      intValue: 0
+      boolValue: 0
+      floatValue: 0.1
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 1
+  callMode: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -8997,14 +9133,14 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 79197ecfbc3a4294a89ce589dac02cf2, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 50
+    m_BestFit: 1
+    m_MinSize: 7
+    m_MaxSize: 30
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Story text
 --- !u!222 &1811299027
