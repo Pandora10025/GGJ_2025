@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5.0f;
     public float lookSpeed = 2f;
     public float rotationX = 0;
-    public float lookXLimit = 45f;
+    public float lookXLimit = 120f;
 
 
     // Start is called before the first frame update

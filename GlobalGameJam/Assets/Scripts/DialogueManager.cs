@@ -25,11 +25,11 @@ public class DialogueManager : MonoBehaviour
 
     public void ActivateTextBox(string objName, string objText)
     {
-        textBox.SetActive(true);
-        bodyText.SetActive(true);
-        bodyText.GetComponent<TextMeshProUGUI>().text = objText;
-        nameText.SetActive(true);
-        nameText.GetComponent<TextMeshProUGUI>().text = objName;
+        // textBox.SetActive(true);
+        // bodyText.SetActive(true);
+        // bodyText.GetComponent<TextMeshProUGUI>().text = objText;
+        // nameText.SetActive(true);
+        // nameText.GetComponent<TextMeshProUGUI>().text = objName;
         textboxIsActive = true;
     }
     public void DeactivateTextBox()
