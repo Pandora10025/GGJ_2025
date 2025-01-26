@@ -50,8 +50,8 @@ public class SelectionManager : MonoBehaviour
         {
             if(Input.GetMouseButtonDown(0))
             {
-                if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
-                flowchart.SendFungusMessage(_selection.GetComponent<ObjectBehavior>().FungusMessage);
+                //if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
+                if(_selection != null) flowchart.SendFungusMessage(_selection.GetComponent<ObjectBehavior>().FungusMessage);
                 isLooking = false;
             }
             
