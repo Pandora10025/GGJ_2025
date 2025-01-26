@@ -23,6 +23,7 @@ public class SelectionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("is talking" + gameManager.GetComponent<GameManager>().isTalking);
         if(_selection != null)
         {
             _selection = null;
@@ -51,6 +52,7 @@ public class SelectionManager : MonoBehaviour
         {
             if(Input.GetMouseButtonDown(0) && !gameManager.GetComponent<GameManager>().isTalking)
             {
+                Debug.Log("clicked");
                 //if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
                 if(_selection != null) flowchart.SendFungusMessage(_selection.GetComponent<ObjectBehavior>().FungusMessage);
                 isLooking = false;
