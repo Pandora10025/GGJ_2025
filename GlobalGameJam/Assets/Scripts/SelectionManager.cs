@@ -12,11 +12,12 @@ public class SelectionManager : MonoBehaviour
     private Transform _selection;
     private bool isLooking;
     public Flowchart flowchart;
+    GameObject gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
     }
 
     // Update is called once per frame
@@ -48,7 +49,7 @@ public class SelectionManager : MonoBehaviour
 
         if (isLooking)
         {
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButtonDown(0) && !gameManager.GetComponent<GameManager>().isTalking)
             {
                 //if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
                 if(_selection != null) flowchart.SendFungusMessage(_selection.GetComponent<ObjectBehavior>().FungusMessage);
