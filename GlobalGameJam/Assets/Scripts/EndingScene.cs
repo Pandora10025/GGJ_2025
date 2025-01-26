@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndingScene : MonoBehaviour
 {
@@ -31,5 +32,10 @@ public class EndingScene : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         player.GetComponent<PlayerMovement>().enabled = false;
         badEndingScreen.SetActive(true);
+    }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene("Title_Screen");
     }
 }
