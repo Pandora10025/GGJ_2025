@@ -23,10 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        //DEBUG THING
-        if (Input.GetKeyDown(KeyCode.P)) { 
-            isFrozen = !isFrozen;
-        }
+        
 
         if (!isFrozen)
         {

@@ -40,4 +40,11 @@ public class GameManager : MonoBehaviour
             if (blackAlpha == 0) isSeeing = true;
         }
     }
+
+    public void BlackOut()
+    {
+        blackOut.GetComponent<Image>().color = new Color(0, 0, 0, 1);
+    }
 }
+
+
