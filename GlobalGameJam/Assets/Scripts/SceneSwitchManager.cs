@@ -32,6 +32,7 @@ public class SceneSwitchManager : MonoBehaviour
        if (Input.GetKey(KeyCode.R))
         {
             scene = SceneState.GameRestart;
+            SceneStateManager();
         } 
     }
 
@@ -42,7 +43,7 @@ public class SceneSwitchManager : MonoBehaviour
             case SceneState.Title:
                 break;
             case SceneState.Play:
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 currentscene = SceneManager.GetActiveScene();
                 break;
             case SceneState.GoodEnd:
@@ -63,6 +64,7 @@ public class SceneSwitchManager : MonoBehaviour
     public void StartGame()
     {
         scene = SceneState.Play;
+        SceneStateManager();
     }
     public void QuitGame()
     {

@@ -8,6 +8,8 @@ public class EndingScene : MonoBehaviour
     public GameObject goodEndingScreen;
     public GameObject badEndingScreen;
     public GameObject player;
+
+    public GameObject blackout;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class EndingScene : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         player.GetComponent<PlayerMovement>().enabled = false;
         goodEndingScreen.SetActive(true);
+        blackout.SetActive(true);
     }
 
     public void endEventBad()
@@ -32,10 +35,15 @@ public class EndingScene : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         player.GetComponent<PlayerMovement>().enabled = false;
         badEndingScreen.SetActive(true);
+        blackout.SetActive(true);
     }
 
     public void restartGame()
     {
         SceneManager.LoadScene("Title_Screen");
+    }
+
+    public void stargame(){
+        SceneManager.LoadScene("MainScene");
     }
 }
