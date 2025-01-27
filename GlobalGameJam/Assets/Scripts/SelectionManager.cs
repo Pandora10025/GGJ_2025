@@ -50,7 +50,7 @@ public class SelectionManager : MonoBehaviour
 
         if (isLooking)
         {
-            if(Input.GetMouseButtonDown(0) && !gameManager.GetComponent<GameManager>().isTalking)
+            if(Input.GetKeyDown(KeyCode.Space) && !gameManager.GetComponent<GameManager>().isTalking)
             {
                 Debug.Log("clicked");
                 //if (_selection != null) this.GetComponent<DialogueManager>().ActivateTextBox(_selection.GetComponent<ObjectBehavior>().objName, _selection.GetComponent<ObjectBehavior>().objText);
